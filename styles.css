@@ -1,0 +1,190 @@
+body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-image: url(cookeriez.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover; /* makes image fill screen without stretching */
+    background-position: center center; /* keeps image centered */
+    background-attachment: fixed; /* optional, makes it stay while scrolling */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.409);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* --- styles.css --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 30px;
+    background-color: #e8e8e8;
+    color: #333;
+}
+
+h1 {
+    color: #b01010;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #b01010;
+}
+
+.recipe-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 0 auto 30px auto; /* Centers the card */
+    max-width: 800px; /* Limits the width for better readability */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #007000;
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-left: 5px solid #007000;
+    padding-left: 10px;
+}
+
+h3 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* --- Lists and Time Highlight --- */
+.ingredients-list, .instructions-list {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.6;
+}
+
+.ingredients-list li:before {
+    content: "•";
+    color: #b01010;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.instructions-list li {
+    counter-increment: step-counter;
+    margin-bottom: 8px;
+}
+.instructions-list li:before {
+    content: counter(step-counter) ". ";
+    color: #007000;
+    font-weight: bold;
+}
+
+.prep-time {
+    font-weight: bold;
+    color: #ff6600;
+    background-color: #fff3e0;
+    padding: 3px 8px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* --- Table Styling (Nutrition) --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+th, td {
+    border: 1px solid #e0e0e0;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f7f7f7;
+    color: #007000;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+
+
+
+ .food-list-container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .food-menu-list {
+            list-style: none; 
+            padding: 0;
+        }
+
+        .food-menu-list li {
+            border-bottom: 1px solid #eee;
+            padding: 12px 0;
+            transition: background-color 0.2s;
+        }
+
+        .food-menu-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .food-menu-list li a {
+            text-decoration: none; 
+            color: #007000; 
+            font-size: 1.2em;
+            display: block; 
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .food-menu-list li a:hover {
+            color: #b01010; 
+            background-color: #f7f7f7; 
+        }
+
+.desc {
+    display: flex;
+    justify-content: center;
+    color: #e0e0e0;
+    font-size: x-large;
+}
+
+.shortdesc {
+    text-align: center;
+    color: #e0e0e0;
+    font-size: larger;
+}
